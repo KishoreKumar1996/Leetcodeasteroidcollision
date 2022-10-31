@@ -1,4 +1,6 @@
-<Today i finish this project>
+
+some mistake happen
+
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> ast=new Stack<>();
