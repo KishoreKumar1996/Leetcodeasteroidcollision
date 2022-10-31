@@ -1,0 +1,30 @@
+public static void main(String[] args) {
+		String s= " 145 " ;
+		char freq[]=s.trim().toCharArray();
+		int ans=0;
+		int sign=1;
+		
+		System.out.print(leetcode(ans,sign,freq));
+	}
+	public static int leetcode(int ans,int sign,int []freq){	
+		for(int i=0;i<freq.length;i++){
+		    if(i==0 && freq[i]=='+'||freq[i]=='-'){
+		        if(freq[i]=='-'){
+		            sign = -1;
+		        }
+		        continue;
+		    }
+		}
+		if(Character.isDigit(freq[i])){
+		    ans=ans*10+(freq[i]-'0');
+		    if(ans> Integer.Max_VALUE || ans< Integer.Max_VALUE){
+		        if(sign==1){
+		            return Integer.Max_VALUE;}
+		            else{
+		                return Integer.Max_VALUE;}
+		         } 
+		    else{
+		        break;
+		        }
+		      } 
+		    return (int) (sign*ans); }
